@@ -1,12 +1,9 @@
 require('dotenv').config();
 
 const express = require('express');
-const path = require('path');
 
 const configViewEngine = require('./config/viewsEngine');
 const webRoutes = require('./routes/web');
-
-const env = path.join(process.cwd(), 'config', '.env');
 
 // config server
 const app = express()
